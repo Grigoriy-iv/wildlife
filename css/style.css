@@ -443,6 +443,7 @@ h6 {
   background: transparent;
   color: #666666;
   font-size: calc( 16px + 7 * ((100vw - 320px) / 1120) );
+  -webkit-appearance: none;
   padding: 0 0 0 15px;
 }
 .get-notified__e_mail::placeholder {
@@ -460,6 +461,7 @@ h6 {
   padding: 0 35px;
   line-height: 27px;
   color: #f7f7f7;
+  -webkit-appearance: none;
   border-radius: 0px 5px 5px 0px;
 }
 @media (max-width: 767px) {
@@ -548,11 +550,6 @@ h6 {
 }
 .slick-slider .slider__item.slick-center {
   opacity: 1;
-}
-@media (max-width: 414px) {
-  .slick-slider {
-    padding: 0;
-  }
 }
 
 .footer {
