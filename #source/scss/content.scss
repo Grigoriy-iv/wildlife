@@ -98,6 +98,7 @@
     color: #666666;
     @include adaptiv-font(23, 16);
     padding: 0 0 0 15px;
+    -webkit-appearance: none;
     &::placeholder {
       font-family: "Roboto", sans-serif;
       font-size: 23px;
@@ -118,6 +119,7 @@
     line-height: 27px;
     color: #f7f7f7;
     border-radius: 0px 5px 5px 0px;
+    -webkit-appearance: none;
   }
   @media (max-width: 767px) {
     &__subtitle {
