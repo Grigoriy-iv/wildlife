@@ -1,0 +1,144 @@
+.content {
+  padding: 120px 0 240px 0;
+  text-align: center;
+  background: #cccccc;
+  @media (max-width: 1100px) {
+    padding: 100px 0 200px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 50px 0 80px 0;
+  }
+}
+
+.latest-articles {
+  &__title {
+    color: #333333;
+  }
+
+  &__subtitle {
+    padding: 20px 0 120px 0;
+    @include adaptiv-font(24, 20);
+    line-height: 36px;
+    color: #666666;
+  }
+  @media (max-width: 767px) {
+    &__subtitle {
+      padding: 10px 0 50px 0;
+    }
+  }
+}
+
+.slider {
+  padding: 0 0 240px 0;
+  &__slick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  &__item {
+    margin: 0 30px;
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  &__animal {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    span {
+      color: #f7f7f7;
+      &:nth-child(1) {
+        padding: 0 0 10px;
+        @include adaptiv-font(32, 20);
+        line-height: 36px;
+      }
+      &:nth-child(2) {
+        @include adaptiv-font(17, 12);
+        line-height: 27px;
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    padding: 0 0 180px 0;
+    &__item {
+      margin: 0 15px;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 0 0 50px 0;
+  }
+}
+
+.get-notified {
+  &__subtitle {
+    padding: 0 0 59px 0;
+    @include adaptiv-font(27, 20);
+    line-height: 40px;
+    color: #333333;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__e_mail {
+    width: 510px;
+    border: 1px solid #666666;
+    border-right: transparent;
+    background: transparent;
+    color: #666666;
+    @include adaptiv-font(23, 16);
+    padding: 0 0 0 15px;
+    &::placeholder {
+      font-family: "Roboto", sans-serif;
+      font-size: 23px;
+      @include adaptiv-font(23, 16);
+      line-height: 27px;
+    }
+  }
+  &__e_mail:focus {
+    &::placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  &__btn {
+    font-family: "Roboto", sans-serif;
+    padding: 0 35px;
+    line-height: 27px;
+    color: #f7f7f7;
+    border-radius: 0px 5px 5px 0px;
+  }
+  @media (max-width: 767px) {
+    &__subtitle {
+      padding: 0 0 40px 0;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+    }
+    &__e_mail {
+      margin: 0 0 10px 0;
+      padding: 13px 15px 13px 15px;
+      width: 100%;
+      border: 1px solid #666666;
+      border-radius: 5px;
+      &::placeholder {
+        padding: 0 15px;
+      }
+    }
+    &__btn {
+      border-radius: 5px;
+    }
+  }
+}
