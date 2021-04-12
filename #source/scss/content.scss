@@ -131,22 +131,12 @@
     }
     &__e_mail {
       margin: 0 0 10px 0;
-      padding: 13px 15px 13px 15px;
+      padding: 7.5px 15px;
       width: 100%;
-      border: 1px solid #666666;
       border-radius: 5px;
-      &::placeholder {
-        padding: 0 15px;
-      }
     }
     &__btn {
       border-radius: 5px;
     }
   }
 }
-
-//input[type="text"],
-//input[type="submit"] {
-//  -webkit-appearance: none;
-//  border-radius: 0;
-//}

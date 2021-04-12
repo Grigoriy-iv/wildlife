@@ -4,6 +4,9 @@
   top: 20px;
   left: 0;
   z-index: 25;
+  &__logo {
+    display: flex;
+  }
 
   @media (max-width: 767px) {
     top: 10px;
