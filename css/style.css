@@ -479,6 +479,7 @@ h6 {
     margin: 0 0 10px 0;
     padding: 7.5px 15px;
     width: 100%;
+    border: 1px solid #666666;
     border-radius: 5px;
   }
   .get-notified__btn {
@@ -516,11 +517,11 @@ h6 {
   margin: -20px 0 0 0;
 }
 .slick-slider .slick-arrow.slick-prev {
-  background: url("/images/icon/arrow-left.svg") 0 0/100% no-repeat;
+  background: url("../images/icon/arrow-left.svg") 0 0/100% no-repeat;
   left: 0;
 }
 .slick-slider .slick-arrow.slick-next {
-  background: url("/images/icon/arrow-right.svg") 0 0/100% no-repeat;
+  background: url("../images/icon/arrow-right.svg") 0 0/100% no-repeat;
   right: 0;
 }
 .slick-slider .slick-dots {
